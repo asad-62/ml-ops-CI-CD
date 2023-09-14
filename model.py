@@ -74,9 +74,9 @@ tf.random.set_seed(1989)
 
 # Create a model using the Sequential API
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(1), 
-    #tf.keras.layers.Dense(1)
-    ])
+    tf.keras.layers.Dense(1, input_shape=(1,))
+])
+
 
 # Compile the model
 model.compile(loss = tf.keras.losses.mae,
